@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"> 
   <link rel="stylesheet"  href="./styles.css"/>
   <title>Taiao - Portfolio</title>
 </head>
@@ -10,30 +14,65 @@
 <body>
 <!--Nav bar-->
     <nav id="navbar">
-      <a href="#welcome-section">About</a>
-      <a href="#projects">Work</a>
-      <a href="#contact">Contact</a>
+      <a class="nav-link" href="#welcome-section">About</a>
+      <a class="nav-link" href="#projects">Work</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </nav>
 
 <!--Welcome Section-->
     <section id="welcome-section">
-      <h1>Kia Ora! I'm Taiao</h1>
-      <h3>an aspiring web developer.</h3>
+      <h1 id="welcome-title">Kia ora! I'm Taiao</h1>
+      <h3 id="welcome-caption">an aspiring web developer.</h3>
     </section>
 
 <!--Projects Section-->
   <section id="projects">
-    <h2>These are some of my Projects:</h2>
-    <div class="project-tile">
-    </div>
-    <div class="project-tile">
-    </div>
+    <h2 id="projects-title">These are some of my Projects:</h2>
+     <div id="projects-wrap">
+      <a href="https://flowtyf.github.io/Tribute-Page/">
+            <div class="project-tile">
+              <img 
+              class="project-image"
+              src="https://spikeybits.com/wp-content/uploads/2015/05/Emperor-of-Mankind.jpg"
+              alt="tribute page image"
+              />
+              <p>Tribute page</p>
+          </div>
+        </a>
+
+        <a href="https://flowtyf.github.io/Tribute-Page/">
+          <div class="project-tile">
+            <img 
+            class="project-image"
+            src="https://spikeybits.com/wp-content/uploads/2015/05/Emperor-of-Mankind.jpg"
+            alt="tribute page image"
+            />
+            <p>Tribute page</p>
+        </div>
+      </a>
+
+      <a href="https://flowtyf.github.io/Tribute-Page/">
+        <div class="project-tile">
+          <img 
+          class="project-image"
+          src="https://spikeybits.com/wp-content/uploads/2015/05/Emperor-of-Mankind.jpg"
+          alt="tribute page image"
+          />
+          <p>Tribute page</p>
+        </div>
+      </div>
+  </a>
+
   </section>
 
 <!--Contact Section-->
-<section id="contact">
+  <section id="contact">
     <h1>Let's work together!</h1>
-</section>
+  </section>
+
+<!--Footer-->
+  <div class="footer">
+  </div>
 
 </body>
 </html>
