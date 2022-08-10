@@ -123,6 +123,36 @@ body {
     overflow: hidden;
 }
 
+/* Contact section */
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    height: 80vh;
+
+}
+
+#contact-title {
+font-size: 50px;
+}
+
+#social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#contact i{
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+
 /*Screen media query*/
 
 @media screen and (max-width:600px) {
