@@ -75,7 +75,7 @@ body {
     display: flex;
     gap: 50px;
     flex-flow: column nowrap;
-    align-items: space-around;
+    align-items: center;
     justify-content: center;
 }
 
@@ -90,7 +90,7 @@ body {
 
 #projects-wrap {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     gap: 50px;
     align-items: center;
     justify-content: center;
@@ -103,9 +103,8 @@ body {
 
 .project-tile {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     max-width: 300px;
-    min-width: 200px;
     max-height: 400px;
     text-align: center;
     background-color: var(--dark-shade);
@@ -119,14 +118,29 @@ body {
 
 
 .project-image {
-    width: 500px;
-    height: 400px;
-
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
 }
 
-/*Projects media query*/
+/*Screen media query*/
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:600px) {
+    #navbar {
+        display: flex;
+        position: fixed;
+        gap: 30px;
+        top: 0;
+        padding: 20px;
+        width: 100%;
+        background-color: var(--color-main);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-link:first-of-type {
+        margin: 0;
+    }
     #projects-wrap {
         display: flex;
         flex-flow: column nowrap;
@@ -135,4 +149,5 @@ body {
         justify-content: center;
         text-align: center;
     }
+    
 }
