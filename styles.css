@@ -1,6 +1,6 @@
 :root {
     --color-main: #395B64;
-    --light-shade: #ece0d5;
+    --light-shade: white;
     --light-accent: #E7F6F2;
     --dark-accent: #A5C9CA;
     --dark-shade: #2C3333;
@@ -128,15 +128,18 @@ body {
 #contact {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     width: 100%;
     flex-direction: column;
     height: 80vh;
+    background-color: var(--dark-shade);
 
 }
 
 #contact-title {
 font-size: 50px;
+color: var(--light-shade);
 }
 
 #social-icons {
@@ -146,10 +149,10 @@ font-size: 50px;
     gap: 50px;
 }
 
-#contact i{
+.social-link {
     font-size: 25px;
     text-decoration: none;
-
+    color: var(--light-shade);
 }
 
 
